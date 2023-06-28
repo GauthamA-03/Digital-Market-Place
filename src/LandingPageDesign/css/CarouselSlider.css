@@ -1,0 +1,62 @@
+.carousel-slide {
+  position: relative;
+  height: 100%;
+  margin-bottom: 80px;
+}
+
+.carousel-slide img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.indicator {
+  position: relative;
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.indicator.selected {
+  background-color: #333;
+}
+
+.indicator-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller devices */
+  .carousel-slide img {
+    max-height: 300px; /* Adjust max-height as needed */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Adjust styles for medium-sized devices */
+  .carousel-slide img {
+    max-height: 400px; /* Adjust max-height as needed */
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Adjust styles for larger devices */
+  .carousel-slide img {
+    max-height: 700px; /* Adjust max-height as needed */
+  }
+}

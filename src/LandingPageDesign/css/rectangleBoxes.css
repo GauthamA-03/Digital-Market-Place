@@ -1,0 +1,64 @@
+.rectangle-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 50px;
+}
+
+.rectangle {
+  width: 250px;
+  height: 150px;
+  background: rgba(196, 196, 196, 1);
+  position: relative;
+}
+
+.name {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* top: 30px;
+  left: 40px; */
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: right;
+  color: #000;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .rectangle-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .rectangle {
+    width: 120px;
+    height: 55px;
+    margin: 5px;
+  }
+
+  .name {
+    width: 80px;
+    height: 20px;
+    top: 25px;
+    left: 30px;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 3px 6px;
+  }
+
+  .rectangle-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .rectangle:last-child {
+    margin-bottom: 10px;
+  }
+}

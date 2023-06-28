@@ -1,0 +1,133 @@
+.product-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-item {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text from wrapping to next line */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+  flex-shrink: 1; /* Allow items to shrink when screen size is reduced */
+  flex-grow: 1;
+}
+
+.filter-item:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-item:focus {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
+.filter-item:active {
+  background-color: #c0c0c0;
+}
+
+.filter-item.view-all {
+  background-color: #007bff;
+  color: #ffffff;
+  border: 2px solid;
+  border-color: black;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+  background-color: #007bff;
+  height: 1px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0.5px solid rgba(221, 221, 221, 1);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.results-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.sort-icon {
+  margin-right: 10px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  color: blue;
+}
+
+.filter-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: blue;
+}
+
+.sort-icon.icon-sort {
+  color: blue;
+}
+
+.icon-sort {
+  color: blue;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.tab-item {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.tab-item.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.tab-line {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0.5px solid rgba(221, 221, 221, 1);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
