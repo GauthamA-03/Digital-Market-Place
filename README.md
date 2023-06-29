@@ -20,3 +20,12 @@ Step 6: Clicking on the "Facility Management" card will take you to a page that 
 Step 7: On this page, you will find a submenu for each service. Click on the "Maintenance Services" option, and a dropdown will appear listing the levels for that particular service. 
 Step 8: Select "Level 1" from the submenu, which will take you to the Level 1 page which renders the corresponding design.
 Step 9: To navigate back to the previous pages, use the "<" arrow button in the navigation bar.
+
+Technologies used:
+
+->HTML5 and CSS3
+->JavaScript
+->ReactJs
+->Node.Js / NPM Packages
+->Material UI for icons/logos
+
